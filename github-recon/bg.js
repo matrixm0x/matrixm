@@ -1,1 +1,0 @@
-No Content: https://mr-koanti.github.io/bg.js
