@@ -115,8 +115,8 @@ rway()
     cat /$path/$1/waybackurls/waybackurls.txt | grep "\\.tar" | sort -u | sed -r '/^\s*$/d' | tee -a /$path/$1/waybackurls/ext/tar.txt
     cat /$path/$1/waybackurls/waybackurls.txt | grep "\\.bz2" | sort -u | sed -r '/^\s*$/d' | tee -a /$path/$1/waybackurls/ext/bz2.txt
     cat /$path/$1/waybackurls/waybackurls.txt | grep "\\.7z"  | sed -r '/^\s*$/d' | tee -a /$path/$1/waybackurls/ext/7z.txt
-    cat /$path/$1/waybackurls/waybackurls.txt | grep "\\api" | sort -u | sed -r '/^\s*$/d' | tee -a /$path/$1/waybackurls/ext/api.txt
-    cat /$path/$1/waybackurls/waybackurls.txt | grep "\\token" | sort -u | sed -r '/^\s*$/d' | tee -a /$path/$1/waybackurls/ext/token.txt
+    cat /$path/$1/waybackurls/waybackurls.txt | grep "\\.api" | sort -u | sed -r '/^\s*$/d' | tee -a /$path/$1/waybackurls/ext/api.txt
+    cat /$path/$1/waybackurls/waybackurls.txt | grep "\\.token" | sort -u | sed -r '/^\s*$/d' | tee -a /$path/$1/waybackurls/ext/token.txt
     cat /$path/$1/waybackurls/waybackurls.txt | grep "\\.py" | sort -u | sed -r '/^\s*$/d' | tee -a /$path/$1/waybackurls/ext/py.txt
     cat /$path/$1/waybackurls/waybackurls.txt | grep "\\.pl" | sort -u | sed -r '/^\s*$/d' | tee -a /$path/$1/waybackurls/ext/pl.txt
     cat /$path/$1/waybackurls/waybackurls.txt | grep "\\.db" | sort -u | sed -r '/^\s*$/d' | tee -a /$path/$1/waybackurls/ext/db.txt
