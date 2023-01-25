@@ -23,9 +23,10 @@
 #        nuclei
 # ----------------------
 
+path="mnt/c/Users/loler/OneDrive/Desktop/targets"
+
 rsub()
 {
-    path="mnt/c/Users/loler/OneDrive/Desktop/targets"
     mkdir /$path/$1
     touch /$path/$1/note
     clear
@@ -154,17 +155,19 @@ djs()
     echo "#################################"
 }
 
+linkfinderpath="mnt/c/Users/loler/OneDrive/Documents/LinkFinder"
+
 rjs()
 {
     clear
-    linkfinderpath="mnt/c/Users/loler/OneDrive/Documents/LinkFinder"
     python3 /$linkfinderpath/linkfinder.py -i /$path/$1/jsfiles/all.js -o cli
     nuclei -t ~/nuclei-templates/exposures/ -l /$path/$1/jsfiles/all.js
 }
 
+dirsearchpath="mnt/c/Users/loler/OneDrive/Documents/dirsearch"
+
 rdir()
 {
-    dirsearchpath="mnt/c/Users/loler/OneDrive/Documents/dirsearch"
     python3 /$dirsearchpath/dirsearch.py -u $1
 }
 
