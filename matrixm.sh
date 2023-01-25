@@ -161,7 +161,7 @@ rjs()
 {
     clear
     python3 /$linkfinderpath/linkfinder.py -i /$path/$1/jsfiles/all.js -o cli
-    nuclei -t ~/nuclei-templates/exposures/ -l /$path/$1/jsfiles/all.js
+    nuclei -t ~/nuclei-templates/exposures/ -l /$path/$1/jsfiles/js_filter.txt
 }
 
 dirsearchpath="mnt/c/Users/loler/OneDrive/Documents/dirsearch"
