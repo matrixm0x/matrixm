@@ -24,11 +24,11 @@
 # ----------------------
 
 path="mnt/c/Users/loler/OneDrive/Desktop/targets"
+mkdir /$path/$1
+touch /$path/$1/note
 
 rsub()
 {
-    mkdir /$path/$1
-    touch /$path/$1/note
     clear
 
     echo "########################################"
